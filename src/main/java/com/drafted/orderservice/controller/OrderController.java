@@ -9,6 +9,8 @@ import java.util.List;
 public class OrderController {
     private final OrderService svc;
     public OrderController(OrderService svc) { this.svc = svc; }
-    @GetMapping public List<Order> all() { return svc.findAll(); }
-    @PostMapping public Order create(@RequestBody Order o) { return svc.save(o); }
+    @GetMapping
+    public List<Order> all() { return svc.findAll(); }
+    @PostMapping
+    public Order create(@RequestBody Order o) { return svc.save(o); }
 }
