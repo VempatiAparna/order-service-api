@@ -6,5 +6,5 @@ public class Order {
     private Long id;
     private String item;
     private int quantity;
-    // getters and setters omitted for brevity
+    // getters/setters omitted
 }
